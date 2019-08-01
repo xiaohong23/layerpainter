@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Node Group Masks - BATS</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Node Group Masks";
+    var mkdocs_page_input_path = "masks\\node_group_masks.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> BATS</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Getting started</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../getting_started/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../getting_started/installation/">Installation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../getting_started/supported_addons/">Supported addons</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../getting_started/changelog/">Changelog</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../getting_started/known_issues/">Known Issues</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basic features</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../basic_features/">Preferences</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basic_features/active_tool/">Active tool</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basic_features/workspace/">Workspace</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../basic_features/n_panel/">N-Panel</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Layers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../layers/">Basics</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../layers/fill_layer/">Fill Layer</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../layers/paint_layer/">Paint Layer</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../layers/node_group_layer/">Node Group Layer</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../layers/folders/">Group Layer</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Masks</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Basics</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../texture_masks/">Texture Masks</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Node Group Masks</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#what-does-it-do">What does it do?</a></li>
+    
+
+    <li class="toctree-l3"><a href="#what-is-it-for">What is it for?</a></li>
+    
+
+    <li class="toctree-l3"><a href="#settings">Settings</a></li>
+    
+
+    <li class="toctree-l3"><a href="#bake-masks">Bake Masks</a></li>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Toolbar</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../toolbar/">Basics</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/baking/">Baking</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/export/">Export</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/settings/">Settings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../toolbar/painting/">Painting</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Custom Node groups</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../custom_node_groups/">Basics</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../custom_node_groups/custom_node_layers/">Custom Node Layers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../custom_node_groups/custom_node_masks/">Custom Node Masks</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../custom_node_groups/thumbnails/">Thumbnails</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">BATS</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Masks &raquo;</li>
+        
+      
+    
+    <li>Node Group Masks</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="what-does-it-do">What does it do?</h1>
+<p>A Node Group Mask uses the <strong>output of a node group</strong> to affect the layers visibility. This means that you can have complex node setups to create a mask for your layer. You can then <strong>tweak the inputs</strong> of this node group to change the mask. These groups can also use the <a href="../../toolbar/baking/">baked AO and Bevel maps</a> to affect only parts of the mesh.</p>
+<h1 id="what-is-it-for">What is it for?</h1>
+<p>These masks can be used if you want to create quick but complex masks. This also allows you to take advantage of AO and bevel mask textures. If you want to, this also allows you to <strong>work with nodes</strong>, to create <a href="../../custom_node_groups/">your own groups</a>.</p>
+<h1 id="settings">Settings</h1>
+<p><img alt="Mask settings" src="../../img/node_group_mask_settings.jpg" /></p>
+<p>Below that, there are the <strong>settings</strong> for every input of the node group. Some inputs do special things, like creating <strong>collapsable panels</strong> or texture inputs. You can find more information about that <a href="../../custom_node_groups/">here</a>.</p>
+<hr />
+<p><img alt="Baked masks" src="../../img/baked_masks.jpg" /></p>
+<p>If you see a text like this, you now that the node group <strong>uses an AO or Bevel</strong> mask to change the look of the material. You can see how to bake them <a href="../../toolbar/baking/">here</a>. The textures will be <strong>selected automatically</strong> when their baked.</p>
+<h1 id="bake-masks">Bake Masks</h1>
+<p>Node Group masks can be baked to images with the bake button. This will ask you for a resolution and will then bake the mask to a texture which can then be edited. This can be good to save resources. Obviously it also means that you can't tweak the settings anymore.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../toolbar/" class="btn btn-neutral float-right" title="Basics">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../texture_masks/" class="btn btn-neutral" title="Texture Masks"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../texture_masks/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../toolbar/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
