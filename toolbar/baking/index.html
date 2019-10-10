@@ -85,6 +85,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../../basic_features/tutorial/">Tutorial</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../../basic_features/active_tool/">Active tool</a>
                 </li>
                 <li class="">
@@ -157,10 +161,26 @@
     <a class="current" href="./">Baking</a>
     <ul class="subnav">
             
+    <li class="toctree-l3"><a href="#toggle-bake-preview">Toggle Bake Preview</a></li>
+    
+
+    <li class="toctree-l3"><a href="#import-aobevel-map">Import AO/Bevel map</a></li>
+    
+
     <li class="toctree-l3"><a href="#baking-ambient-occlusion">Baking Ambient Occlusion</a></li>
     
 
     <li class="toctree-l3"><a href="#baking-bevel">Baking Bevel</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#internal">Internal</a></li>
+        
+            <li><a class="toctree-l4" href="#custom">Custom</a></li>
+        
+            <li><a class="toctree-l4" href="#normal">Normal</a></li>
+        
+        </ul>
     
 
     <li class="toctree-l3"><a href="#save-location">Save location</a></li>
@@ -242,19 +262,44 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="baking-ambient-occlusion">Baking Ambient Occlusion</h1>
+                <h1 id="toggle-bake-preview">Toggle Bake Preview</h1>
+<p>Some bake types have the option to toggle the bake preview. This will disable all other functionality of the addon while it's active. It will set the render engine to Cycles and show you a preview of what the baked texture will look like in the viewport.</p>
+<h1 id="import-aobevel-map">Import AO/Bevel map</h1>
+<p>This can be used to import a custom map for the selected bake type. This will then be used in masks and node groups.</p>
+<h1 id="baking-ambient-occlusion">Baking Ambient Occlusion</h1>
 <p>The ambient occlusion baking has the following settings:</p>
 <ul>
+<li><strong>Bake mask separately</strong>: This will save the textures with a different name and will not be used in masks and node groups</li>
 <li><strong>Resolution</strong>: This is the resolution of the baked texture</li>
 <li><strong>Samples</strong>: These are the samples of the ambient occlusion baking</li>
+<li><strong>Contrast</strong>: The contrast of the baked texture</li>
 </ul>
 <h1 id="baking-bevel">Baking Bevel</h1>
 <p>The bevel baking has the following settings:</p>
 <ul>
+<li><strong>Bake mask separately</strong>: This will save the textures with a different name and will not be used in masks and node groups</li>
 <li><strong>Resolution</strong>: This is the resolution of the baked texture</li>
+</ul>
+<h3 id="internal">Internal</h3>
+<ul>
 <li><strong>Samples</strong>: These are the samples of the ambient occlusion baking</li>
 <li><strong>Radius</strong>: This is the radius of the bevel, that will be baked</li>
+<li><strong>Brightness</strong>: This is the brightness of the baked texture</li>
 <li><strong>Contrast</strong>: This is the contrast of the baked texture</li>
+</ul>
+<h3 id="custom">Custom</h3>
+<ul>
+<li><strong>Both/Concave/Convex</strong>: This will specify what type of edges will be used when the map is baked</li>
+<li><strong>Radius</strong>: The radius of the lines drawn onto the texture [in pixels]</li>
+<li><strong>Angle</strong>: The angle from which on the edges will be used for baking</li>
+<li><strong>Smoothing</strong>: The radius of the smoothing applied to the lines [in pixels]</li>
+<li><strong>Smoothing steps</strong>: The steps in which the smoothing will be applied [in pixels]</li>
+</ul>
+<h3 id="normal">Normal</h3>
+<p>This texture will always be baked separately. It's a normal texture and can be used in Normal channels.</p>
+<ul>
+<li><strong>Samples</strong>: These are the samples of the ambient occlusion baking</li>
+<li><strong>Radius</strong>: This is the radius of the bevel, that will be baked</li>
 </ul>
 <h1 id="save-location">Save location</h1>
 <p>The textures are saved in the folder where your .blend files lives, under _/layerpainter_texture_cache.</p>
