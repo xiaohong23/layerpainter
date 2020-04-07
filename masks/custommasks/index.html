@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Installation - Layer Painter</title>
+  <title>Custom Masks - Layer Painter</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Installation";
-    var mkdocs_page_input_path = "getting_started\\installation.md";
+    var mkdocs_page_name = "Custom Masks";
+    var mkdocs_page_input_path = "masks\\custommasks.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -54,25 +54,19 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../">Introduction</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">Installation</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#installing-the-addon">Installing the addon</a></li>
-    
-
-    </ul>
+    <a class="" href="../../getting_started/">Introduction</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../supported_addons/">Supported addons</a>
+    <a class="" href="../../getting_started/installation/">Installation</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../changelog/">Changelog</a>
+    <a class="" href="../../getting_started/supported_addons/">Supported addons</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../getting_started/changelog/">Changelog</a>
                 </li>
     </ul>
 	    </li>
@@ -144,11 +138,17 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../masks/masks/">Masks</a>
+    <a class="" href="../masks/">Masks</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../../masks/custommasks/">Custom Masks</a>
+    <a class="current" href="./">Custom Masks</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#custom-masks">Custom Masks</a></li>
+    
+
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -235,11 +235,11 @@
     
       
         
-          <li>Getting started &raquo;</li>
+          <li>Masks &raquo;</li>
         
       
     
-    <li>Installation</li>
+    <li>Custom Masks</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -249,15 +249,27 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="installing-the-addon">Installing the addon</h1>
-<div class="admonition warning">
-<p class="admonition-title">Remove previous versions!</p>
-<p>If you have a previous version of Layer Painter installed, make sure to remove that version and then restart blender before installing the new version.</p>
-</div>
-<p>The addon is installed like every other addon in blender.</p>
-<p>Go to the <em>Add-ons</em> tab in the Blender preferences and press <strong>Install</strong>.<br>
-Select the <strong>layer_painter_1.2.x.zip</strong> and select <em>Install Add-on from file</em>.</p>
-<p>Then click the checkbox and <strong>restart Blender</strong>.</p>
+                <h1 id="custom-masks">Custom Masks</h1>
+<p><img alt="Custom Masks" src="../../img/custom_mask.jpg" /></p>
+<p>In the preferences, you can add custom masks.</p>
+<p><strong>Masks always use the first input to connect to previous masks and nodes!</strong></p>
+<p>The first option is the displayname. This is the name shown in the mask selection dropdowns.</p>
+<p>Then you can select if the mask should be used as a filter mask or a normal mask. An example for a filter mask would be a color ramp and an example for a normal mask is a noise texture.</p>
+<p>The mask node is the node that should be used as a mask. This can be a normal blender node or a custom node group. If it's a node group enter the name of that group here. If it's a normal node, enter the bl_idname of that node.</p>
+<p>Next you can select a mask thumbnail image. This will be shown in the mask preview section.</p>
+<p>If you are using a node group you need to enter the path to the blend file with that group.</p>
+<p>The inputs of the chosen node will then be shown in the mask settings.</p>
+<hr />
+<p>There are a few special names for inputs that will be shown differently in the settings panel. They should all end with a '.' and then have the name shown in the settings. Example: 'LP_TEX.My texture' will result in a texture input with the name 'My texture'.</p>
+<ul>
+<li><strong>LP_PANEL_OPEN:</strong> This will create a panel in the settings.</li>
+<li><strong>LP_PANEL:</strong> This will create a panel that's closed by default.</li>
+<li><strong>LP_TEX:</strong> This will create a texture input</li>
+<li><strong>LP_TEX.AO:</strong> This is a special name for a texture input which will automatically be assigned the baked mask textures</li>
+<li><strong>LP_TEX.Bevel:</strong> This is a special name for a texture input which will automatically be assigned the baked mask textures</li>
+<li><strong>LP_TEX.ID:</strong> This is a special name for a texture input which will automatically be assigned the chosen mask texture</li>
+<li><strong>LP_LABEL:</strong> This will create a labeled separator</li>
+</ul>
               
             </div>
           </div>
@@ -265,10 +277,10 @@ Select the <strong>layer_painter_1.2.x.zip</strong> and select <em>Install Add-o
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../supported_addons/" class="btn btn-neutral float-right" title="Supported addons">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../vectorfx/vectorfx/" class="btn btn-neutral float-right" title="Vector FX">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../" class="btn btn-neutral" title="Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../masks/" class="btn btn-neutral" title="Masks"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -294,10 +306,10 @@ Select the <strong>layer_painter_1.2.x.zip</strong> and select <em>Install Add-o
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../masks/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../supported_addons/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../vectorfx/vectorfx/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
